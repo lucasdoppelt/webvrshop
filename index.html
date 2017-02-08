@@ -1,14 +1,16 @@
 <head>
+
   <title>VR Shop Experience</title>
   <meta charset="utf-8">
   <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
   <script src="components/index.js"></script> 
-  
-	
+  <script src="components/a-obj-models.js"></script> 
+
 	
 </head>
 
 <body>
+
   <a-scene>
     <a-entity position="0 1.8 4">
         <a-camera id="camera" look-controls="" wasd-controls="" camera="active:true" rotation="-3.2085636527326074 1.0313240312354763 0" position="0 0 0">
@@ -20,10 +22,10 @@
         </a-camera>
       </a-entity>
 	  
-	
+	<a-assets>
     <a-asset-item id="plant-obj" src="/models/plant3.obj"></a-asset-item>
 	    <a-asset-item id="plant-mtl" src="/models/plant3.mtl"></a-asset-item>
-    
+   </a-assets>
     
   
    <a-entity obj-model="obj: #plant-obj, mtl: #plant-mtl"  scale="0.01 0.01 0.01" ></a-entity>
